@@ -5,7 +5,13 @@ document.addEventListener("DOMContentLoaded", function() {
     document.body.appendChild(button);
 
     button.addEventListener("click", function() {
-        console.log("clicked");
+        let div = document.createElement("div");
+        document.body.appendChild(div);
+        div.style.border = "1px solid black";
+        div.className = "flex-container";
+        div.style.display = "flex";
+        div.style.flexDirection = "row";
 
+        
     })
 })
